@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamster Kombat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="game-area">
+            <img id="hamster" src="hamster.png" alt="Hamster" />
+            <div id="earnings">Earnings: 0</div>
+        </div>
+
+        <div class="upgrade-area">
+            <h2>Upgrades</h2>
+            <div class="upgrade" id="upgrade1" data-cost="10" data-income="1">
+                Business Card - Cost: 10, Income: +1/tap
+            </div>
+            <div class="upgrade" id="upgrade2" data-cost="100" data-income="10">
+                Mini PC - Cost: 100, Income: +10/tap
+            </div>
+            <div class="upgrade" id="upgrade3" data-cost="500" data-income="50">
+                Office Desk - Cost: 500, Income: +50/tap
+            </div>
+        </div>
+
+        <div class="passive-income-area">
+             <h2>Passive Income Generators</h2>
+             <div class="passive-income" id="passive1" data-cost="500" data-income="5">
+                Fan - Cost: 500, Income: +5/second
+            </div>
+             <div class="passive-income" id="passive2" data-cost="2000" data-income="20">
+                Air Conditioning - Cost: 2000, Income: +20/second
+            </div>
+        </div>
+
+        <div class="save-load-area">
+            <button id="save">Save Game</button>
+            <button id="load">Load Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
